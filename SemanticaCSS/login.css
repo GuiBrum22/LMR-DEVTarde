@@ -1,0 +1,10 @@
+  #grad{
+        background-image: linear-gradient(to right, rgb(171, 218, 219), rgba(116, 176, 255, 0.911)); 
+    }
+    #grad{
+        text-align: center;
+    }
+    .login{
+        margin-top: 100px;
+    }
+   

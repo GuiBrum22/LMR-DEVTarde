@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-image: url('https://w0.peakpx.com/wallpaper/78/481/HD-wallpaper-the-eminence-in-shadow-episode-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    
+    #menu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(122, 117, 117);
+    }
+    
+    #menu img{
+    height: 55px;
+    margin-left: 30px;
+    }
+    
+    .linkMenu{
+        color: aliceblue;
+        font-size: 2em;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .parte1{
+        width: 100%;
+        height: 800px;
+        text-align: center;
+    }
+    
+    .parte1 h1{
+        color: white;
+        margin-top: 100px;
+    }
+    .parte1 h2{
+        color: white;
+    }
+
+    .parte1 p{
+        font-family: 'Times New Roman', Times, serif;
+        color: azure;
+        margin-top: 500px;
+    }
+    
+    header{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+    
+    @media screen and (max-width:768px){
+       img{
+        width: 200px;
+       }
+    }
+    .menu{
+        width: 90%;
+        height: 600px;
+        padding: 60px;
+        margin: 0 auto;
+        display: table;
+        box-shadow: -1px -2px 5px 13px rgba(230,225,225,0.75);
+    }
+    
+    .menu img {
+        width: 40%;
+        height: 500px;
+        float: right;
+    }
+    
+    .menu .texto{
+        margin-top: 50px;
+        width: 50%;
+        font-size: 22px;
+
+    }

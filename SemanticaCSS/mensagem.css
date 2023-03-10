@@ -1,0 +1,14 @@
+#grad{
+    background-image: linear-gradient(to right, rgb(171, 218, 219), rgba(116, 176, 255, 0.911)); 
+}
+#grad{
+    text-align: center;
+}
+.mensagem{
+    margin-top: 250px;
+}
+div {
+    background-image: linear-gradient(to left, rgb(109, 204, 228), rgb(193, 248, 248));
+    width: 20%;
+    margin: 0 auto;
+}
