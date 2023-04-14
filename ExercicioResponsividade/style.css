@@ -1,9 +1,25 @@
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width:768){
+    .hamburger{
+        display: inline;
+    }
+    header nav{
+        display: none;
+    }
+}
+
 body {
     margin: 0;
     background-image: url('https://w0.peakpx.com/wallpaper/78/481/HD-wallpaper-the-eminence-in-shadow-episode-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    }
+    header{
+        height: 7vh;
     }
     
     #menu {
