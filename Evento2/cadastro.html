@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="pt-br"entrar>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+        <title>Minha Entrada - Criar conta</title>
+        <meta name="description" content="">
+        <link rel="icon" href="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada/ticketeira/favicon/minhaentrada.ico">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="og:title" content="Minha Entrada - Criar conta">
+        <meta name="og:description" content="">
+        <meta name="og:locale" content="pt-br">
+        <meta name="og:type" content="activity">
+        <meta name="og:image" content="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada/ticketeira/cards-images/minhaentrada.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada/ticketeira/cards-images/minhaentrada.png">
+        <meta name="domain" content="">
+        <meta name="idioma" content="pt-br">
+        <meta name="local" content="BR">
+        <meta name="moeda" content="BRL">
+        <meta name="formatoData" content="d/m/Y">
+        <meta name="source-app" content="web">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada//app/icons/180x180.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada//app/icons/167x167.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada//app/icons/152x152.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada//app/icons/120x120.png">
+        <meta name="theme-color" content="#5D0C8B">
+        <meta name="apple-mobile-web-app-title" content="Minha Entrada">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link href="./css/cadastro.css" rel="stylesheet">
+        <style>
+            :root {
+                --color-primary: #505050;
+                --color-primary-hover: #333333;
+                --color-primary-focus: #8a8a8a;
+                --color-button: #3a3a3a;
+                --color-button-hover: #000000;
+                --color-button-focus: #414141;
+                --color-button-font: #FFF;
+                --color-link: #555555;
+                --color-footer: #353535;
+                --color-primary-gradient: linear-gradient(216.45deg, #414141 12.07%, #5a5a5a 96.94%);
+                --color-footer-text: #FFF;
+            }
+        </style>
+        <link href="./css/criarConta/index.css" rel="stylesheet">
+        <script src="https://www.google.com/recaptcha/enterprise.js"></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }
+                ,
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            }
+            )(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-50122103-1', 'minhaentrada.com.br');
+            ga('send', 'pageview');
+        </script>
+        <meta name="facebook-domain-verification" content="pn8l1inuqew1kpbdlpbvnyoaky52gj"/>
+        <!-- Meta Pixel Code -->
+        <script>
+            !function(f, b, e, v, n, t, s) {
+                if (f.fbq)
+                    return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                }
+                ;
+                if (!f._fbq)
+                    f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '3126465460954324');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3126465460954324&ev=PageView&noscript=1"/>
+        </noscript>
+        <!-- End Meta Pixel Code -->
+        <meta name="adopt-website-id" content="82670891-08d2-452a-832b-d0439b97c8b9"/>
+        <script src="//tag.goadopt.io/injector.js?website_code=82670891-08d2-452a-832b-d0439b97c8b9" class="adopt-injector"></script>
+    </head>
+    <body>
+        <div class="modal micromodal-slide " id="modal-login" aria-hidden="true">
+            <button class="hidden" type="button">Utilizado para desativar autofocus nos botões</button>
+            <div class="modal__overlay" tabindex="-1">
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h3 class="modal__title modal-login-title text-xl"></h3>
+                        <button class="modal__close zmdi zmdi-close zmdi-hc-1x" type="button" aria-label="Close modal" data-modal-close="modal-login"></button>
+                    </header>
+                    <main class="modal__content modal-login-content">
+                        <div class="w-full">
+                            <h3>Faça login na sua conta para continuar</h3>
+                            <div class="item-form mt-5">
+                                <span for="" class="font-bold uppercase fs-3-5">Login (Cpf ou documento)</span>
+                                <input id="input-login-modal" class="w-full" type="text">
+                            </div>
+                            <div class="item-form mt-4">
+                                <span for="" class="font-bold uppercase fs-3-5">Senha</span>
+                                <div class="relative">
+                                    <input id="input-senha-modal" class="w-full absolute" type="password">
+                                    <i class="zmdi zmdi-eye zmdi-hc-lg mostrar-senha-login absolute right-1.5 top-4 cursor-pointer" title="Mostrar senha" data-tipo="modal" data-title-troca="Ocultar senha"></i>
+                                </div>
+                            </div>
+                            <div class="flex justify-end mt-12">
+                                <button class="text-link font-bold cursor-pointer" data-modal-open="modal-esqueci-senha">Esqueci minha senha</button>
+                            </div>
+                            <div class="div-btn w-full mt-8">
+                                <button class="btn w-full" id="btn-logar" data-redirect-to="" data-need-usuario-verificado="">Entrar</button>
+                            </div>
+                            <div class="flex justify-center mt-8 mb-4">
+                                <span>Ou entre com</span>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 div-face border p-5 cursor-pointer flex items-center justify-center login-by-rede-social" data-rede-social="facebook">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="14.5" cy="14.5" r="14.5" fill="#FFF"/>
+                                        <path fill="#3B5998" d="M15.5312 20.6562H13.0625V14.5938H11V12.2188H13.0625V10.4688C13.0625 9.46875 13.3438 8.69792 13.9062 8.15625C14.4688 7.61458 15.2188 7.34375 16.1562 7.34375C16.9062 7.34375 17.5208 7.375 18 7.4375V9.53125L16.7188 9.5625C16.2604 9.5625 15.9479 9.65625 15.7812 9.84375C15.6146 10.0312 15.5312 10.3125 15.5312 10.6875V12.2188H17.9062L17.5938 14.5938H15.5312V20.6562Z"/>
+                                    </svg>
+                                    <span class="ml-2.5">Facebook</span>
+                                </div>
+                                <div class="w-2/4 border p-5 cursor-pointer flex items-center justify-center login-by-rede-social" data-rede-social="google">
+                                    <i class="zmdi zmdi-google icon-google-login"></i>
+                                    <span class="ml-2.5">Google</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center mt-4">
+                                <span>É novo por aqui?</span>
+                                <a href="./criar-conta.html" class="">Criar minha conta</a>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="modal micromodal-slide " id="modal-regiao-eventos" aria-hidden="true">
+            <button class="hidden" type="button">Utilizado para desativar autofocus nos botões</button>
+            <div class="modal__overlay" tabindex="-1" data-modal-close=&quot;modal-regiao-eventos&quot;>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h3 class="modal__title modal-regiao-eventos-title text-xl"></h3>
+                        <button class="modal__close zmdi zmdi-close zmdi-hc-1x" type="button" aria-label="Close modal" data-modal-close="modal-regiao-eventos"></button>
+                    </header>
+                    <main class="modal__content modal-regiao-eventos-content">
+                        <div>
+                            <h3>Minha localização</h3>
+                            <p class="mt-5 mb-7">Selecione abaixo o estado onde deseja encontrar eventos.</p>
+                            <div class="filtro-pedidos flex flex-col mb-5">
+                                <label for="seleciona-regiao">
+                                    <span class="w-full uppercase font-bold text-xs mb-1">Estado</span>
+                                </label>
+                                <div class="container-estado max-h-1.5">
+                                    <select name="estado" class="w-full" id="seleciona-regiao">
+                                        <option value="" selected>Todos</option>
+                                        <option value="BA">BA - Brasil</option>
+                                        <option value="DF">DF - Brasil</option>
+                                        <option value="GO">GO - Brasil</option>
+                                        <option value="PR">PR - Brasil</option>
+                                        <option value="RS">RS - Brasil</option>
+                                        <option value="SC">SC - Brasil</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex w-full justify-center">
+                                <button class="btn mt-64" id="btn-regiao-evento" disabled>Definir localidade</button>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="modal micromodal-slide " id="modal-cadastrar-comprovante" aria-hidden="true">
+            <button class="hidden" type="button">Utilizado para desativar autofocus nos botões</button>
+            <div class="modal__overlay" tabindex="-1" data-modal-close=&quot;modal-cadastrar-comprovante&quot;>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h3 class="modal__title modal-cadastrar-comprovante-title text-xl"></h3>
+                        <button class="modal__close zmdi zmdi-close zmdi-hc-1x" type="button" aria-label="Close modal" data-modal-close="modal-cadastrar-comprovante"></button>
+                    </header>
+                    <main class="modal__content modal-cadastrar-comprovante-content">
+                        <div class="max-w-lg">
+                            <h3>Cadastrar comprovante</h3>
+                            <p class="mt-4">O titular dos dados é o único responsável pelo documento. Caso ocorra fraude o mesmo será denunciado e sujeito as penalidades da lei.</p>
+                            <p class="my-4">
+                                <b>Insira abaixo, o arquivo de comprovante e digite o seu CPF para confirmar.</b>
+                            </p>
+                            <div id="div-ticket" class="flex flex-col">
+                                <div id="div-ticket-info-wrapper" class="flex flex-col items-center p-3.5 ticket-border-x">
+                                    <input type="file" id="cp-comprovante" accept="image/*,application/pdf"/>
+                                    <button type="button" id="mask-comprovante" data-change="Anexar comprovante">
+                                        <span class="pr-1.5 truncate">Anexar comprovante</span>
+                                        <i id="icon-cadastrar-comprovante" class="zmdi zmdi-upload"></i>
+                                    </button>
+                                    <select id="select-tipo-comprovante">
+                                        <option value="">Tipo do comprovante</option>
+                                    </select>
+                                    <input type="text" id="data-vencimento-comprovante" data-mask="##/##/####" class="masked" placeholder="Data de vencimento">
+                                    <input type="text" id="cpf-comprovante" data-mask="###.###.###-##" class="masked" placeholder="CPF">
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <div class="div-ticket-separador-ball div-ticket-separador-ball-left"></div>
+                                    <div class="div-ticket-separador-line"></div>
+                                    <div class="div-ticket-separador-ball"></div>
+                                </div>
+                                <div class="flex items-center justify-center p-3.5 ticket-border-x">
+                                    <button id="btn-cadastrar-comprovante" class="btn">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="modal micromodal-slide " id="modal-esqueci-senha" aria-hidden="true">
+            <button class="hidden" type="button">Utilizado para desativar autofocus nos botões</button>
+            <div class="modal__overlay" tabindex="-1">
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h3 class="modal__title modal-esqueci-senha-title text-xl"></h3>
+                        <button class="modal__close zmdi zmdi-close zmdi-hc-1x" type="button" aria-label="Close modal" data-modal-close="modal-esqueci-senha"></button>
+                    </header>
+                    <main class="modal__content modal-esqueci-senha-content">
+                        <div class="modal-esqueci-senha">
+                            <h2>Redefinir senha</h2>
+                            <div class="item-form mt-5">
+                                <span for="" class="font-bold uppercase fs-3-5">Cpf ou documento</span>
+                                <input id="input-cpf-esqueci-senha" class="w-full" type="text" autocomplete="off">
+                            </div>
+                            <div class="div-btn w-full mt-8">
+                                <button class="btn w-full" id="btn-continuar-esqueci-senha">Continuar</button>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <span class="hidden" id='open-modal-forma-envio-redefinir-senha' data-modal-open="modal-forma-envio-redefinir-senha"></span>
+        <div class="modal micromodal-slide " id="modal-forma-envio-redefinir-senha" aria-hidden="true">
+            <button class="hidden" type="button">Utilizado para desativar autofocus nos botões</button>
+            <div class="modal__overlay" tabindex="-1">
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h3 class="modal__title modal-forma-envio-redefinir-senha-title text-xl"></h3>
+                        <button class="modal__close zmdi zmdi-close zmdi-hc-1x" type="button" aria-label="Close modal" data-modal-close="modal-forma-envio-redefinir-senha"></button>
+                    </header>
+                    <main class="modal__content modal-forma-envio-redefinir-senha-content"></main>
+                </div>
+            </div>
+        </div>
+        <div class="modal micromodal-slide " id="modal-busca-mobile" aria-hidden="true">
+            <button class="hidden" type="button">Utilizado para desativar autofocus nos botões</button>
+            <div class="modal__overlay" tabindex="-1" data-modal-close=&quot;modal-busca-mobile&quot;>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h3 class="modal__title modal-busca-mobile-title text-xl">Busca
+                </h3>
+                        <button class="modal__close zmdi zmdi-close zmdi-hc-1x" type="button" aria-label="Close modal" data-modal-close="modal-busca-mobile"></button>
+                    </header>
+                    <main class="modal__content modal-busca-mobile-content">
+                        <h1 class="fs-10" id="titulo-busca">O que você está buscando?</h1>
+                        <div class="div-form">
+                            <div class="item-form">
+                                <span for="" class="font-bold uppercase fs-3-5">Buscar eventos</span>
+                                <input id="input-busca-evento-mobile" class="w-full" type="text" placeholder="Eventos, artistas, categorias e data">
+                            </div>
+                            <div class="item-form">
+                                <span for="" class="font-bold uppercase fs-3-5">Local</span>
+                                <input id="input-busca-local-evento-mobile" class="w-full" type="text" placeholder="Casas de show, cidade e estado">
+                            </div>
+                            <div class="div-btn div-btn-desktop">
+                                <button class="btn btn-buscar">Buscar</button>
+                            </div>
+                        </div>
+                        <div id="conteudo-component-eventos-relacionados-mobile"></div>
+                        <div class="div-btn div-btn-mobile">
+                            <button class="btn btn-buscar">Buscar</button>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div id="bg-geral" class="hidden justify-center items-center">
+            <div class="spinner"></div>
+        </div>
+        <header class="bg-primary">
+            <div id="topo" class="container flex items-center mx-auto py-5">
+                <div class="flex flex-row justify-between w-full items-center">
+                    <div class="voltar-topo">
+                        <a class="flex items-center" href="/">
+                            <i class="zmdi zmdi-arrow-left text-button-font zmdi-hc-2x"></i>
+                            <h4 class="text-button-font ml-4">Home</h4>
+                        </a>
+                    </div>
+                    <div id="logo-topo" class="hidden md:block">
+                        <a href="/">
+                            <img src="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada/logos-ticketeiras-grupos/logo-branca.svg" alt="Logo"/>
+                        </a>
+                    </div>
+                    <div id="conteudo-direita-topo" class="flex items-center">
+                        <div id="conteudo-direita-topo-mobile" class="flex flex-row items-center">
+                            <button id="bt-buscar-topo" data-modal-open="modal-busca-mobile" class="flex items-center open-modal h-7" aria-label="Buscar por eventos">
+                                <i id="icon-buscar-topo" class="zmdi zmdi-search text-button-font"></i>
+                            </button>
+                        </div>
+                        <div id="conteudo-direita-topo-desktop" class="md:relative">
+                            <div class="ml-5 md:hidden">
+                                <button id="bt-menu-topo-mobile" class="bt-menu-topo menu-open h-7" aria-label="Abrir Menu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16" fill="#fff">
+                                        <rect width="23" height="2" rx="1" transform="matrix(-1 0 0 1 23 0)"/>
+                                        <rect width="19.32" height="2" rx="1" transform="matrix(-1 0 0 1 23 7)"/>
+                                        <rect width="11.96" height="2" rx="1" transform="matrix(-1 0 0 1 23 14)"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="menu-open hidden md:flex itens-center">
+                                <div class="flex flex-col items-end mr-5">
+                                    <p class="text-button-font">Seja bem-vindo!</p>
+                                    <button id="bt-entrar-conta" class="text-button-font text-lg font-semibold">Entrar na minha conta</button>
+                                </div>
+                                <button id="bt-menu-topo-desktop" class="bt-menu-topo">
+                                    <i class="zmdi zmdi-chevron-down text-button-font zmdi-hc-2x"></i>
+                                </button>
+                            </div>
+                            <nav id="menu-topo" class="menu hidden">
+                                <div class="cabecalho-menu flex">
+                                    <div class="img-cabecalho-menu flex justify-center items-center">
+                                        <i class="zmdi zmdi-account zmdi-hc-2x"></i>
+                                    </div>
+                                    <div class="txt-cabecalho-menu mx-3 grid items-center">
+                                        <p class="text-sm">Olá! Clique em entrar para acessar sua conta.</p>
+                                    </div>
+                                    <div>
+                                        <button id="bt-fechar-menu-topo" class="bt-fechar-menu menu-close" aria-label="Fechar menu">
+                                            <i class="zmdi zmdi-close zmdi-hc-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="conteudo-menu">
+                                    <div class="item-conteudo-menu" id="div-link-login" data-modal-open="modal-login">
+                                        <div class="flex items-center text-default">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-5">
+                                                <path d="M1.82169 0H9.71495C10.7209 0 11.5365 0.815521 11.5365 1.82152V5.46455C11.5365 5.7999 11.2646 6.07174 10.9293 6.07174C10.5939 6.07174 10.3221 5.7999 10.3221 5.46455V1.82152C10.3221 1.48617 10.0503 1.21433 9.71491 1.21433H1.82166C1.48631 1.21433 1.21447 1.48617 1.21447 1.82152V15.1793C1.21447 15.5147 1.48631 15.7865 1.82166 15.7865H9.71495C10.0503 15.7865 10.3221 15.5147 10.3221 15.1793V11.5363C10.3221 11.2009 10.594 10.9291 10.9293 10.9291C11.2647 10.9291 11.5365 11.2009 11.5365 11.5363V15.1793C11.5365 16.1853 10.721 17.0008 9.71498 17.0008H1.82173C0.81573 17.0008 0.000211716 16.1853 0.000211716 15.1793V1.82152C0.00017643 0.815521 0.815696 0 1.82169 0Z" fill="#494949"/>
+                                                <path d="M4.85729 7.89265H14.9278L12.9284 5.89321C12.6954 5.652 12.7021 5.26763 12.9433 5.03468C13.1786 4.80745 13.5517 4.80745 13.7869 5.03468L16.8228 8.07053C16.8792 8.12695 16.9238 8.19402 16.9539 8.26787C17.0154 8.4164 17.0154 8.58322 16.9539 8.73175C16.9236 8.80586 16.8788 8.87314 16.8222 8.9297L13.7864 11.9656C13.5534 12.2068 13.169 12.2134 12.9278 11.9805C12.6866 11.7475 12.6799 11.3632 12.9129 11.122C12.9178 11.1169 12.9227 11.1119 12.9278 11.107L14.9278 9.10698H4.85725C4.52191 9.10698 4.25007 8.83514 4.25007 8.49979C4.25007 8.16445 4.52194 7.89265 4.85729 7.89265Z" fill="#494949"/>
+                                            </svg>
+                                            <span>Entrar</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-conteudo-menu">
+                                        <a href="/criar-conta">
+                                            <div class="flex items-center text-default">
+                                                <i class="zmdi zmdi-account-add zmdi-hc-lg mr-5"></i>
+                                                <span>Criar conta</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-conteudo-menu">
+                                        <a href="https://login.minhaentrada.com.br/login_prod?lang=pt-br">
+                                            <div class="flex items-center text-default">
+                                                <i class="zmdi zmdi-face zmdi-hc-lg mr-5"></i>
+                                                <span>Sou produtor</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-conteudo-menu">
+                                        <a href="/fale-conosco">
+                                            <div class="flex items-center text-default">
+                                                <i class="zmdi zmdi-help-outline zmdi-hc-lg mr-5"></i>
+                                                <span>Ajuda</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item-conteudo-menu cursor-pointer">
+                                        <div class="flex items-baseline text-default" id="div-link-local-eventos" data-modal-open="modal-regiao-eventos">
+                                            <i class="zmdi zmdi-pin zmdi-hc-lg mr-5"></i>
+                                            <div class="flex flex-col">
+                                                <span>Minha localização</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-conteudo-menu cursor-pointer">
+                                        <div class="flex items-baseline text-default" id="div-link-cadastrar-comprovante" data-modal-open="modal-cadastrar-comprovante">
+                                            <i class="zmdi zmdi-file-text zmdi-hc-lg mr-5"></i>
+                                            <span>Cadastrar comprovante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="container-criar-conta my-8">
+                <div class="flex items-center justify-between w-full">
+                    <h1 class="text-2xl">Criar minha conta</h1>
+                    <a style="color: unset" href="/minha-conta/pedidos" class="hidden md:block">
+                        <i class="zmdi zmdi-long-arrow-left  zmdi-hc-lg cursor-pointer"></i>
+                    </a>
+                </div>
+                <form method="post" id="form-criar-conta">
+                    <h1 class="text-xl mt-5 mb-2.5">Dados pessoais</h1>
+                    <label>
+                        <p class="text-label uppercase">
+                            Nacionalidade <span class="required" title="Campo obrigatório" title="Campo obrigatório">*</span>
+                        </p>
+                        <select name="nacionalidade" id="cp-nacionalidade" class="w-full mb-2.5">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Uruguai">Uruguai</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="USA">USA</option>
+                            <option value="França">França</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Bélgica">Bélgica</option>
+                            <option value="Dinamarca">Dinamarca</option>
+                            <option value="Itália">Itália</option>
+                            <option value="Noruega">Noruega</option>
+                            <option value="Espanha">Espanha</option>
+                            <option value="Suécia">Suécia</option>
+                            <option value="Alemanha">Alemanha</option>
+                            <option value="México">México</option>
+                            <option value="Reino Unido">Reino Unido</option>
+                            <option value="Japão">Japão</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Canadá">Canadá</option>
+                            <option value="Suiça">Suiça</option>
+                            <option value="Austrália">Austrália</option>
+                            <option value="Áustria">Áustria</option>
+                            <option value="Bolívia">Bolívia</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colômbia">Colômbia</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="China">China</option>
+                            <option value="Paraguai">Paraguai</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Bulgária">Bulgária</option>
+                            <option value="Países Baixos">Países Baixos</option>
+                            <option value="Finlândia">Finlândia</option>
+                            <option value="Grécia">Grécia</option>
+                            <option value="Hungria">Hungria</option>
+                            <option value="India">India</option>
+                            <option value="Indonésia">Indonésia</option>
+                            <option value="Irlanda">Irlanda</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Coréia do Sul">Coréia do Sul</option>
+                            <option value="Malásia">Malásia</option>
+                            <option value="Nova Zelândia">Nova Zelândia</option>
+                            <option value="Filipinas">Filipinas</option>
+                            <option value="Polônia">Polônia</option>
+                            <option value="Romênia">Romênia</option>
+                            <option value="Rússia">Rússia</option>
+                            <option value="Singapura">Singapura</option>
+                            <option value="África do Sul">África do Sul</option>
+                            <option value="Tailândia">Tailândia</option>
+                            <option value="Turquia">Turquia</option>
+                            <option value="Sérvia e Montenegro">Sérvia e Montenegro</option>
+                            <option value="Catar">Catar</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Quênia">Quênia</option>
+                            <option value="República do Congo">República do Congo</option>
+                            <option value="Namíbia">Namíbia</option>
+                            <option value="São Marinho">São Marinho</option>
+                            <option value="Níger">Níger</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Eslovênia">Eslovênia</option>
+                            <option value="Islândia">Islândia</option>
+                            <option value="Chade">Chade</option>
+                            <option value="Somália">Somália</option>
+                            <option value="Gabão">Gabão</option>
+                            <option value="Quirguistão">Quirguistão</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Mauritânia">Mauritânia</option>
+                            <option value="Jordânia">Jordânia</option>
+                            <option value="Equador">Equador</option>
+                            <option value="Maurício">Maurício</option>
+                            <option value="Macedônia">Macedônia</option>
+                            <option value="Sudão">Sudão</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="República Popular do Congo">República Popular do Congo</option>
+                            <option value="Santa Lúcia">Santa Lúcia</option>
+                            <option value="Geórgia">Geórgia</option>
+                            <option value="Serra Leoa">Serra Leoa</option>
+                            <option value="Omã">Omã</option>
+                            <option value="Arábia Saudita">Arábia Saudita</option>
+                            <option value="Marrocos">Marrocos</option>
+                            <option value="Ilhas Salomão">Ilhas Salomão</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Gâmbia">Gâmbia</option>
+                            <option value="Bahrein">Bahrein</option>
+                            <option value="Cazaquistão">Cazaquistão</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Síria">Síria</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Groenlândia">Groenlândia</option>
+                            <option value="Ilhas Comores">Ilhas Comores</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Argélia">Argélia</option>
+                            <option value="Guiné Equatorial">Guiné Equatorial</option>
+                            <option value="Emirados Árabes Unidos">Emirados Árabes Unidos</option>
+                            <option value="Maldivas">Maldivas</option>
+                            <option value="Camarões">Camarões</option>
+                            <option value="Paquistão">Paquistão</option>
+                            <option value="Guiana">Guiana</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Domínica">Domínica</option>
+                            <option value="Vietnã">Vietnã</option>
+                            <option value="Croácia">Croácia</option>
+                            <option value="Ilhas Spratly">Ilhas Spratly</option>
+                            <option value="Afeganistão">Afeganistão</option>
+                            <option value="Zâmbia">Zâmbia</option>
+                            <option value="Ilhas Paracel">Ilhas Paracel</option>
+                            <option value="Iêmen">Iêmen</option>
+                            <option value="Guiné-Bissau">Guiné-Bissau</option>
+                            <option value="República Dominicana">República Dominicana</option>
+                            <option value="Nigéria">Nigéria</option>
+                            <option value="Tunísia">Tunísia</option>
+                            <option value="Tadjiquistão">Tadjiquistão</option>
+                            <option value="Costa do Marfim">Costa do Marfim</option>
+                            <option value="Moçambique">Moçambique</option>
+                            <option value="Papua-Nova Guiné">Papua-Nova Guiné</option>
+                            <option value="São Vicente e Granadinas">São Vicente e Granadinas</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Coréia do Norte">Coréia do Norte</option>
+                            <option value="Bermudas">Bermudas</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Botsuana">Botsuana</option>
+                            <option value="Macau">Macau</option>
+                            <option value="Zimbábue">Zimbábue</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Líbano">Líbano</option>
+                            <option value="Azerbaijão">Azerbaijão</option>
+                            <option value="Irã">Irã</option>
+                            <option value="Lituânia">Lituânia</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Letônia">Letônia</option>
+                            <option value="Gana">Gana</option>
+                            <option value="Mongólia">Mongólia</option>
+                            <option value="Ucrânia">Ucrânia</option>
+                            <option value="São Tomé e Príncipe">São Tomé e Príncipe</option>
+                            <option value="Uzbequistão">Uzbequistão</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Lesoto">Lesoto</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Suazilândia">Suazilândia</option>
+                            <option value="Albânia">Albânia</option>
+                            <option value="Ruanda">Ruanda</option>
+                            <option value="Burkina Fasso">Burkina Fasso</option>
+                            <option value="Chipre">Chipre</option>
+                            <option value="Antígua e Barbuda">Antígua e Barbuda</option>
+                            <option value="Egito">Egito</option>
+                            <option value="Trinidad e Tobago">Trinidad e Tobago</option>
+                            <option value="São Cristóvão e Névis">São Cristóvão e Névis</option>
+                            <option value="Guiné">Guiné</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Bielorrússia">Bielorrússia</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Listenstaine">Listenstaine</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Jibuti">Jibuti</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Tanzânia">Tanzânia</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Estônia">Estônia</option>
+                            <option value="Burma">Burma</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Eslováquia">Eslováquia</option>
+                            <option value="Libéria">Libéria</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Malávi">Malávi</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Turcomenistão">Turcomenistão</option>
+                            <option value="Líbia">Líbia</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Iraque">Iraque</option>
+                            <option value="Micronésia">Micronésia</option>
+                            <option value="Camboja">Camboja</option>
+                            <option value="Nicarágua">Nicarágua</option>
+                            <option value="República Centro-Africana">República Centro-Africana</option>
+                            <option value="Bósnia e Herzegovina">Bósnia e Herzegovina</option>
+                            <option value="Luxemburgo">Luxemburgo</option>
+                        </select>
+                    </label>
+                    <div class="flex justify-between mb-2.5 uppercase">
+                        <label class="flex flex-col w-porcentagem-48 cp-nacionalidade-brasil hidden">
+                            <p class="text-label uppercase">
+                                CPF <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <input type="text" name="cpf" data-mask="###.###.###-##" class="masked" value=""/>
+                        </label>
+                        <label class="flex flex-col w-porcentagem-48 cp-nacionalidade-brasil  hidden">
+                            <p class="text-label uppercase">
+                                RG <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <input type="number" name="rg" value=""/>
+                        </label>
+                        <label class="flex flex-col w-porcentagem-48 cp-nacionalidade-not-brasil ">
+                            <p class="text-label uppercase">
+                                Documento <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <input type="number" name="documento" value=""/>
+                        </label>
+                    </div>
+                    <label>
+                        <p class="text-label uppercase">
+                            Nome completo <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <input type="text" name="nome-completo" class="w-full mb-2.5" value=""/>
+                    </label>
+                    <label>
+                        <p class="text-label uppercase">
+                            E-mail <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <input type="text" name="email" class="w-full mb-2.5" value=""/>
+                    </label>
+                    <div class="flex justify-between">
+                        <label class="flex flex-col w-porcentagem-48 ">
+                            <p class="text-label uppercase">
+                                Data de nascimento <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <input type="text" name="data-nascimento" placeholder="__/__/____" value=""/>
+                        </label>
+                        <label class="flex flex-col w-porcentagem-48 ">
+                            <p class="text-label uppercase">
+                                Sexo <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <select name="sexo">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </label>
+                    </div>
+                    <h1 class="text-xl mt-5 mb-2.5">Informações de contato</h1>
+                    <div class="flex justify-between mb-2.5">
+                        <label class="flex flex-col w-porcentagem-48">
+                            <p class="text-label uppercase">
+                                Celular <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <input type="text" name="celular" data-mask="(##) #####-####" placeholder="(xx) (xxxxx-xxxx)" class="masked" value=""/>
+                        </label>
+                        <label class="flex flex-col w-porcentagem-48 ">
+                            <p class="text-label uppercase">Tel. residencial</p>
+                            <input type="text" name="tel-residencial" data-mask="(##) ####-####" placeholder="(xx) (xxxx-xxxx)" class="masked" value=""/>
+                        </label>
+                    </div>
+                    <label class="flex flex-col w-porcentagem-48 ">
+                        <p class="text-label uppercase">Tel. comercial</p>
+                        <input type="text" name="tel-comercial" data-mask="(##) ####-####" placeholder="(xx) (xxxx-xxxx)" class="masked" value=""/>
+                    </label>
+                    <h1 class="text-xl mt-5 mb-2.5">Endereço</h1>
+                    <label class="flex flex-col w-porcentagem-48  ">
+                        <p class="text-label uppercase">
+                            CEP <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <input type="text" name="cep" data-mask="#####-###" class="cep-load-endereco w-full mb-2.5 masked" value=""/>
+                    </label>
+                    <label class=" ">
+                        <p class="text-label uppercase">
+                            Logradouro <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <input type="text" name="logradouro" class="logradouro-load-endereco w-full mb-2.5" value=""/>
+                    </label>
+                    <div class="flex justify-between mb-2.5">
+                        <label class="flex flex-col w-porcentagem-23  ">
+                            <p class="text-label uppercase">
+                                Número <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <input type="number" name="numero" value=""/>
+                        </label>
+                        <label class="flex flex-col w-porcentagem-73 ">
+                            <p class="text-label uppercase">Complemento</p>
+                            <input type="text" name="complemento" value=""/>
+                        </label>
+                    </div>
+                    <label class=" ">
+                        <p class="text-label uppercase">
+                            Bairro <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <input type="text" name="bairro" class="bairro-load-endereco w-full mb-2.5" value=""/>
+                    </label>
+                    <label class="flex flex-col w-full mb-2.5 ">
+                        <p class="text-label uppercase">
+                            País <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <div class="container-combo-pais">
+                            <select name="pais" id="select-pais" class="pais-load-estados pais-load-endereco w-full">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Uruguai">Uruguai</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="USA">USA</option>
+                                <option value="França">França</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Bélgica">Bélgica</option>
+                                <option value="Dinamarca">Dinamarca</option>
+                                <option value="Itália">Itália</option>
+                                <option value="Noruega">Noruega</option>
+                                <option value="Espanha">Espanha</option>
+                                <option value="Suécia">Suécia</option>
+                                <option value="Alemanha">Alemanha</option>
+                                <option value="México">México</option>
+                                <option value="Reino Unido">Reino Unido</option>
+                                <option value="Japão">Japão</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Suiça">Suiça</option>
+                                <option value="Austrália">Austrália</option>
+                                <option value="Áustria">Áustria</option>
+                                <option value="Bolívia">Bolívia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colômbia">Colômbia</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="China">China</option>
+                                <option value="Paraguai">Paraguai</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Bulgária">Bulgária</option>
+                                <option value="Países Baixos">Países Baixos</option>
+                                <option value="Finlândia">Finlândia</option>
+                                <option value="Grécia">Grécia</option>
+                                <option value="Hungria">Hungria</option>
+                                <option value="India">India</option>
+                                <option value="Indonésia">Indonésia</option>
+                                <option value="Irlanda">Irlanda</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Coréia do Sul">Coréia do Sul</option>
+                                <option value="Malásia">Malásia</option>
+                                <option value="Nova Zelândia">Nova Zelândia</option>
+                                <option value="Filipinas">Filipinas</option>
+                                <option value="Polônia">Polônia</option>
+                                <option value="Romênia">Romênia</option>
+                                <option value="Rússia">Rússia</option>
+                                <option value="Singapura">Singapura</option>
+                                <option value="África do Sul">África do Sul</option>
+                                <option value="Tailândia">Tailândia</option>
+                                <option value="Turquia">Turquia</option>
+                                <option value="Sérvia e Montenegro">Sérvia e Montenegro</option>
+                                <option value="Catar">Catar</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Quênia">Quênia</option>
+                                <option value="República do Congo">República do Congo</option>
+                                <option value="Namíbia">Namíbia</option>
+                                <option value="São Marinho">São Marinho</option>
+                                <option value="Níger">Níger</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Eslovênia">Eslovênia</option>
+                                <option value="Islândia">Islândia</option>
+                                <option value="Chade">Chade</option>
+                                <option value="Somália">Somália</option>
+                                <option value="Gabão">Gabão</option>
+                                <option value="Quirguistão">Quirguistão</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Mauritânia">Mauritânia</option>
+                                <option value="Jordânia">Jordânia</option>
+                                <option value="Equador">Equador</option>
+                                <option value="Maurício">Maurício</option>
+                                <option value="Macedônia">Macedônia</option>
+                                <option value="Sudão">Sudão</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="República Popular do Congo">República Popular do Congo</option>
+                                <option value="Santa Lúcia">Santa Lúcia</option>
+                                <option value="Geórgia">Geórgia</option>
+                                <option value="Serra Leoa">Serra Leoa</option>
+                                <option value="Omã">Omã</option>
+                                <option value="Arábia Saudita">Arábia Saudita</option>
+                                <option value="Marrocos">Marrocos</option>
+                                <option value="Ilhas Salomão">Ilhas Salomão</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Gâmbia">Gâmbia</option>
+                                <option value="Bahrein">Bahrein</option>
+                                <option value="Cazaquistão">Cazaquistão</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Síria">Síria</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Groenlândia">Groenlândia</option>
+                                <option value="Ilhas Comores">Ilhas Comores</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Argélia">Argélia</option>
+                                <option value="Guiné Equatorial">Guiné Equatorial</option>
+                                <option value="Emirados Árabes Unidos">Emirados Árabes Unidos</option>
+                                <option value="Maldivas">Maldivas</option>
+                                <option value="Camarões">Camarões</option>
+                                <option value="Paquistão">Paquistão</option>
+                                <option value="Guiana">Guiana</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Domínica">Domínica</option>
+                                <option value="Vietnã">Vietnã</option>
+                                <option value="Croácia">Croácia</option>
+                                <option value="Ilhas Spratly">Ilhas Spratly</option>
+                                <option value="Afeganistão">Afeganistão</option>
+                                <option value="Zâmbia">Zâmbia</option>
+                                <option value="Ilhas Paracel">Ilhas Paracel</option>
+                                <option value="Iêmen">Iêmen</option>
+                                <option value="Guiné-Bissau">Guiné-Bissau</option>
+                                <option value="República Dominicana">República Dominicana</option>
+                                <option value="Nigéria">Nigéria</option>
+                                <option value="Tunísia">Tunísia</option>
+                                <option value="Tadjiquistão">Tadjiquistão</option>
+                                <option value="Costa do Marfim">Costa do Marfim</option>
+                                <option value="Moçambique">Moçambique</option>
+                                <option value="Papua-Nova Guiné">Papua-Nova Guiné</option>
+                                <option value="São Vicente e Granadinas">São Vicente e Granadinas</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Coréia do Norte">Coréia do Norte</option>
+                                <option value="Bermudas">Bermudas</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Botsuana">Botsuana</option>
+                                <option value="Macau">Macau</option>
+                                <option value="Zimbábue">Zimbábue</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Líbano">Líbano</option>
+                                <option value="Azerbaijão">Azerbaijão</option>
+                                <option value="Irã">Irã</option>
+                                <option value="Lituânia">Lituânia</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Letônia">Letônia</option>
+                                <option value="Gana">Gana</option>
+                                <option value="Mongólia">Mongólia</option>
+                                <option value="Ucrânia">Ucrânia</option>
+                                <option value="São Tomé e Príncipe">São Tomé e Príncipe</option>
+                                <option value="Uzbequistão">Uzbequistão</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Lesoto">Lesoto</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Suazilândia">Suazilândia</option>
+                                <option value="Albânia">Albânia</option>
+                                <option value="Ruanda">Ruanda</option>
+                                <option value="Burkina Fasso">Burkina Fasso</option>
+                                <option value="Chipre">Chipre</option>
+                                <option value="Antígua e Barbuda">Antígua e Barbuda</option>
+                                <option value="Egito">Egito</option>
+                                <option value="Trinidad e Tobago">Trinidad e Tobago</option>
+                                <option value="São Cristóvão e Névis">São Cristóvão e Névis</option>
+                                <option value="Guiné">Guiné</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Bielorrússia">Bielorrússia</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Listenstaine">Listenstaine</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Jibuti">Jibuti</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Tanzânia">Tanzânia</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Estônia">Estônia</option>
+                                <option value="Burma">Burma</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Eslováquia">Eslováquia</option>
+                                <option value="Libéria">Libéria</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Malávi">Malávi</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Turcomenistão">Turcomenistão</option>
+                                <option value="Líbia">Líbia</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Iraque">Iraque</option>
+                                <option value="Micronésia">Micronésia</option>
+                                <option value="Camboja">Camboja</option>
+                                <option value="Nicarágua">Nicarágua</option>
+                                <option value="República Centro-Africana">República Centro-Africana</option>
+                                <option value="Bósnia e Herzegovina">Bósnia e Herzegovina</option>
+                                <option value="Luxemburgo">Luxemburgo</option>
+                            </select>
+                        </div>
+                    </label>
+                    <div class="flex justify-between">
+                        <label class="flex flex-col w-porcentagem-23 ">
+                            <p class="text-label uppercase">
+                                Estado <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <div class="container-combo-estado">
+                                <select name="estado" id="select-estado" disabled class="estado-load-cidades estado-load-endereco w-full">
+                                    <option value="" disabled selected>Selecione</option>
+                                </select>
+                            </div>
+                        </label>
+                        <label class="flex flex-col w-porcentagem-73 ">
+                            <p class="text-label uppercase">
+                                Cidade <span class="required" title="Campo obrigatório">*</span>
+                            </p>
+                            <div class="container-combo-cidade">
+                                <select name="cidade" id="select-cidade" disabled class="cidade-load-endereco w-full">
+                                    <option value="" disabled selected>Selecione</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+                    <h1 class="text-xl mt-5 mb-2.5">Senha segura</h1>
+                    <input type="hidden" id="opcao-escolhida" value="">
+                    <label>
+                        <p class="text-label uppercase">
+                            Nova senha <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <div class="relative">
+                            <input type="password" name="senha" id="cp-senha" class="medir-forca w-full mb-1"/>
+                            <i class="zmdi zmdi-eye zmdi-hc-2x cursor-pointer absolute top-2 right-2 icon-toggle-senha" title="Mostrar" data-id-toggle="cp-senha"></i>
+                        </div>
+                        <div id="teste" class="medidor-forca-senha flex justify-between items-center mb-2.5">
+                            <div class="ilustracao-medida flex">
+                                <div class="item-ilustracao-medida"></div>
+                                <div class="item-ilustracao-medida"></div>
+                                <div class="item-ilustracao-medida"></div>
+                            </div>
+                            <span class="txt-medida font-normal" data-txt-default="Força da senha" data-txt-fraca="Fraca" data-txt-media="Média" data-txt-forte="Forte">Força da senha</span>
+                        </div>
+                    </label>
+                    <label>
+                        <p class="text-label uppercase">
+                            Confirmar senha <span class="required" title="Campo obrigatório">*</span>
+                        </p>
+                        <div class="relative">
+                            <input type="password" name="confirmar-senha" id="confirmar-senha" class="w-full mb-2.5"/>
+                            <i class="zmdi zmdi-eye zmdi-hc-2x cursor-pointer absolute top-2 right-2 icon-toggle-senha" title="Mostrar" data-id-toggle="confirmar-senha"></i>
+                        </div>
+                    </label>
+                    <input type="hidden" id="usuario-status" value="atualizado"/>
+                    <input type="hidden" id="titulo-notificacao-atualizacao" value="Atualização em nossos termos de privacidade"/>
+                    <input type="hidden" id="texto-notificacao-atualizacao" value="<br />Em busca de melhorias ainda maiores na segurança de seus dados, estamos realizando algumas mudanças em nosso sistema e atualizamos os termos de privacidade de acordo
+com a nova LGPD (Lei Geral de Proteção de Dados Pessoais). <br /><br />Em virtude disso, pedimos que atualize sua senha para continuar usufruindo dos recursos do site (acesso total à sua conta e compra de ingressos). <br /><br />Para atualizá-la, a seguir, basta definir uma nova senha segura e checar a opção que você está ciente das atualização em nossos termos de privacidade."/>
+                    <div class="flex items-center mb-2.5">
+                        <input type="checkbox" name="estou-ciente-termos-privacidade" id="cp-estou-ciente-termos-privacidade" class="mr-2.5"/>
+                        <label for="cp-estou-ciente-termos-privacidade" class="w-full">
+                            Estou ciente dos termos de privacidade 
+        (<a href="/termos-privacidade" target="_blank">Clique aqui para visualizar</a>
+                            )
+    
+                        </label>    
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="receber-notificacoes" id="cp-receber-notificacoes" class="mr-2.5"/>
+                        <label for="cp-receber-notificacoes" class="w-full">Quero receber notificações de novos eventos por e-mail</label>
+                    </div>
+                    <div id="g-recaptcha" class="g-recaptcha mt-2.5" data-sitekey="6LfgS98eAAAAAPcNEbrfmkMFpGWHYQ0gZig5iEqe"></div>
+                    <div class="wrapper-btn-criar-conta flex mt-5">
+                        <button type="button" id="bt-salvar-conta" class="btn mr-2.5" href="./alerta/alerta.html">Cadastrar</button>
+                        <button type="button" id="bt-cancelar-cadastro-conta" class="btn btn-cancel-white" href="index.html">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="bg-footer">
+            <div id="rodape" class="container mx-auto py-10">
+                <div class="grid grid-cols-1 gap-10">
+                    <div>
+                        <div id="logo-rodape" class="mb-2">
+                            <img src="https://me-gestao-imagens.s3.amazonaws.com/minhaentrada/logos-ticketeiras-grupos/logo-branca.svg" alt="Logo"/>
+                        </div>
+                        <p class="text-sm">Todos os direitos reservados 2023.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-10 auto-cols-min">
+                        <div class="grid">
+                            <p class="text-sm font-semibold uppercase mb-4">Minha Entrada</p>
+                            <a href="/quem-somos" class="text-sm font-normal">Quem somos</a>
+                            <a href="/termos-privacidade" class="text-sm font-normal">Termos de privacidade</a>
+                            <a href="/termos-uso" class="text-sm font-normal">Termos de uso</a>
+                            <a href="/fale-conosco" class="text-sm font-normal">Central de ajuda</a>
+                            <a href="https://www.dropbox.com/sh/trtwxdw9mkttm5v/AAC3QnQYYlvoH2HFqJOnX9GGa?dl=0" class="text-sm font-normal">Arquivos úteis</a>
+                        </div>
+                        <div class="grid">
+                            <p class="text-sm font-semibold uppercase mb-4">Administrativo</p>
+                            <a href="/login_prod" id="link-produtor" class="text-sm font-normal">Sou produtor</a>
+                            <a href="/rp" id="link-rp" class="text-sm font-normal">Sou relações públicas</a>
+                            <a href="/login_pdv" id="link-pdv" class="text-sm font-normal">Pontos de venda</a>
+                        </div>
+                        <div class="grid md:col-span-2">
+                            <p class="text-sm font-semibold uppercase mb-4">Atendimento</p>
+                            <a href="/fale-conosco" class="text-sm font-normal">Fale conosco</a>
+                            <p class="text-sm font-normal text-color-rodape-especial">Segunda à sábado, das 9:00 às 19:00</p>
+                            <p class="text-sm font-normal text-color-rodape-especial">WhatsApp e telefone: (48) 3053-9119 | (48) 3053-9119</p>
+                        </div>
+                        <div class="">
+                            <div class="grid mb-3">
+                                <p class="text-sm font-semibold uppercase mb-4">Siga-nos</p>
+                                <div class="flex">
+                                    <a href="https://facebook.com/minhaentrada" class="mr-2" title="Facebook">
+                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="14.5" cy="14.5" r="14.5" fill="#D9D9D9"/>
+                                            <path fill="#353535" d="M15.5312 20.6562H13.0625V14.5938H11V12.2188H13.0625V10.4688C13.0625 9.46875 13.3438 8.69792 13.9062 8.15625C14.4688 7.61458 15.2188 7.34375 16.1562 7.34375C16.9062 7.34375 17.5208 7.375 18 7.4375V9.53125L16.7188 9.5625C16.2604 9.5625 15.9479 9.65625 15.7812 9.84375C15.6146 10.0312 15.5312 10.3125 15.5312 10.6875V12.2188H17.9062L17.5938 14.5938H15.5312V20.6562Z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/minhaentrada" class="mr-2" title="Instagram">
+                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="14.5" cy="14.5" r="14.5" fill="#D9D9D9"/>
+                                            <path d="M17.4123 8H11.5874C9.60932 8 8 9.6094 8 11.5875V17.4124C8 19.3906 9.60932 20.9999 11.5874 20.9999H17.4123C19.3906 20.9999 20.9999 19.3905 20.9999 17.4124V11.5875C21 9.6094 19.3906 8 17.4123 8ZM19.8466 17.4124C19.8466 18.7546 18.7546 19.8465 17.4124 19.8465H11.5874C10.2453 19.8466 9.15342 18.7546 9.15342 17.4124V11.5875C9.15342 10.2454 10.2453 9.15342 11.5874 9.15342H17.4123C18.7545 9.15342 19.8465 10.2454 19.8465 11.5875V17.4124H19.8466Z" fill="#353535"/>
+                                            <path d="M14.5001 11.1501C12.6531 11.1501 11.1504 12.6528 11.1504 14.4999C11.1504 16.3469 12.6531 17.8495 14.5001 17.8495C16.3472 17.8495 17.8499 16.3469 17.8499 14.4999C17.8499 12.6528 16.3472 11.1501 14.5001 11.1501ZM14.5001 16.696C13.2891 16.696 12.3038 15.7108 12.3038 14.4998C12.3038 13.2887 13.2891 12.3035 14.5001 12.3035C15.7112 12.3035 16.6965 13.2887 16.6965 14.4998C16.6965 15.7108 15.7112 16.696 14.5001 16.696Z" fill="#353535"/>
+                                            <path d="M17.9904 10.1724C17.7681 10.1724 17.5498 10.2624 17.3929 10.42C17.2352 10.5769 17.1445 10.7953 17.1445 11.0183C17.1445 11.2406 17.2353 11.4589 17.3929 11.6165C17.5498 11.7734 17.7681 11.8641 17.9904 11.8641C18.2134 11.8641 18.431 11.7734 18.5886 11.6165C18.7462 11.4589 18.8362 11.2405 18.8362 11.0183C18.8362 10.7953 18.7462 10.5769 18.5886 10.42C18.4317 10.2624 18.2134 10.1724 17.9904 10.1724Z" fill="#353535"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <p class="text-sm font-semibold uppercase mb-4">Compre pelo app</p>
+                                <div class="flex">
+                                    <a href="https://apps.apple.com/br/app/minha-entrada/id1469757682" class="mr-2" title="Apple Store">
+                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.0527 0H5.94727C2.66794 0 0 2.66794 0 5.94727V23.0527C0 26.3321 2.66794 29 5.94727 29H23.0527C26.3321 29 29 26.3321 29 23.0527V5.94727C29 2.66794 26.3321 0 23.0527 0ZM8.92934 22.3456C8.66738 22.7993 8.1904 23.0532 7.70063 23.0533C7.46053 23.0533 7.21743 22.9923 6.995 22.8639C6.31883 22.4735 6.08632 21.6058 6.47669 20.9296L6.75519 20.4473H10.0253L8.92934 22.3456ZM6.25879 19.3145C5.478 19.3145 4.84277 18.6792 4.84277 17.8984C4.84277 17.1176 5.478 16.4824 6.25879 16.4824H9.04426L12.8649 9.86487L11.8295 8.0714C11.4391 7.39523 11.6715 6.52749 12.3477 6.13707H12.3478C13.0239 5.7467 13.8917 5.97927 14.282 6.65539L14.5 7.0329L14.718 6.65544C15.1085 5.97921 15.9762 5.74676 16.6522 6.13713C16.9798 6.32625 17.2141 6.6316 17.312 6.99693C17.4099 7.36226 17.3596 7.74391 17.1705 8.07146L12.3144 16.4824H15.3775L17.0126 19.3145H6.25879ZM22.7412 19.3145H21.5908L22.5233 20.9296C22.9137 21.6057 22.6812 22.4734 22.0051 22.8638C21.7868 22.9898 21.5446 23.0542 21.2993 23.0542C21.1762 23.0542 21.0525 23.0381 20.9305 23.0053C20.5651 22.9074 20.2597 22.6731 20.0706 22.3455L15.154 13.8297L16.789 10.9976L19.9557 16.4824H22.7412C23.522 16.4824 24.1572 17.1176 24.1572 17.8984C24.1572 18.6792 23.522 19.3145 22.7412 19.3145Z" fill="#D9D9D9"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=br.com.minhaentrada" title="Google Play">
+                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.68629 0 0 2.68629 0 6V23C0 26.3137 2.68629 29 6 29H23C26.3137 29 29 26.3137 29 23V6C29 2.68629 26.3137 0 23 0H6ZM10.147 5.30386C9.4037 4.89301 8.53094 4.90251 7.79236 5.3098L16.4487 13.2953L19.3568 10.3873L10.147 5.30386ZM6.92672 6.12695C6.71536 6.4725 6.59424 6.86791 6.59424 7.28708V21.7096C6.59424 22.1157 6.70467 22.5028 6.90416 22.8413L15.6092 14.1362L6.92672 6.12695ZM20.4385 10.9844L23.2124 12.515C23.9593 12.927 24.4046 13.668 24.4058 14.4968C24.4058 15.3256 23.9593 16.0666 23.2136 16.4798L21.1415 17.6233L17.3215 14.1002L20.4385 10.9844ZM16.482 14.9414L7.75317 23.6702C8.13196 23.8863 8.54757 24.0003 8.96554 24.0003C9.36927 24.0003 9.77537 23.8982 10.147 23.6928L20.0467 18.2294L16.482 14.9414Z" fill="#D9D9D9"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border my-8 border-border-dark"></div>
+                <div class="flex justify-between flex-col-reverse md:flex-row md:items-center">
+                    <div class="flex items-center mt-2 md:mt-0">
+                        <p class="mr-2">Desenvolvido por:</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="0.578125" y="0.45459" width="31" height="31" fill="url(#pattern0)"/>
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_8850_21617" transform="scale(0.005)"/>
+                                </pattern>
+                                <image id="image0_8850_21617" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col md:items-end ">
+                        <p class="text-sm font-normal">Augusto Severo, 31 - Centro, Tubarão SC</p>
+                        <p class="text-sm font-normal">CNPJ: 30.728.766/0001-58</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/app.js"></script>
+        <script src="./js/criarConta/index.js"></script>
+    </body>
+</html>
